@@ -1,0 +1,1807 @@
+/* theloserappcss */
+.Allfollwers {
+  color: red;
+  margin-left: 100px;
+  font-size: 23px;
+}
+.namelist {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  color: gray;
+}
+
+.namefollwing {
+  margin-top: 21px;
+  max-width: 80%;
+}
+.usernamefolwing {
+  margin-top: 21px;
+}
+.folwingloserpic {
+  width: 70px;
+  height: 70px;
+  margin-top: -1px;
+  margin-left: 30px;
+  border-radius: 100px;
+}
+
+.containervideoscreen {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 1060px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}
+
+.pm {
+  background: transparent;
+  border: 0px;
+  margin-top: 10px;
+}
+
+p.ridge {
+  border-style: ridge;
+  height: 200px;
+  border-color: transparent;
+  margin-top: 30px;
+  -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+  -moz-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow: 1.5px 1.5px 5px 5px #ccc;
+  border-radius: 15px;
+}
+
+p.videolist {
+  margin-top: 10px;
+  border-style: ridge;
+  border-color: transparent;
+  /* margin-top: 30px; */
+  -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+  -moz-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow: 1.5px 1.5px 5px 5px #ccc;
+  border-radius: 5px;
+}
+
+.video {
+  height: 0px;
+  display: block;
+
+  margin: auto;
+}
+
+/* theloserappcss */
+
+.App {
+  background-color: #282c34;
+  text-align: left;
+  width: auto;
+  min-height: 100vh;
+}
+
+button {
+  margin: auto;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: rgb(255, 119, 0);
+  color: white;
+  border: 2px solid rgb(255, 119, 0);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+h1 {
+  margin: 1.2rem auto;
+  font-family: sans-serif;
+  font-size: 3.5rem;
+}
+
+blockquote {
+  border-top: 2px solid rgb(255, 119, 0);
+  border-bottom: 2px solid rgb(255, 119, 0);
+  font-size: 2rem;
+  margin: 5% 8%;
+  font-weight: 200;
+  padding: 2%;
+}
+
+small {
+  display: block;
+  font-size: 0.7em;
+  text-align: right;
+  font-style: italic;
+  margin: 10px;
+  padding: 4px;
+}
+
+.App-header,
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+@media screen and (max-width: 900px) {
+  .Allfollwers {
+    color: red;
+    margin-left: 15px;
+    font-size: 23px;
+  }
+  .namefollwing {
+    margin-left: 100px;
+    margin-top: -10px;
+  }
+  .usernamefolwing {
+    margin-left: 100px;
+    margin-top: -10px;
+    font-size: 17px;
+  }
+  .folwingloserpic {
+    width: 75px;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -60px;
+    border-radius: 100px;
+  }
+
+  .containervideoscreen {
+    margin-right: auto; /* 1 */
+    margin-left: auto; /* 1 */
+
+    max-width: 1060px; /* 2 */
+
+    padding-right: 10px; /* 3 */
+    padding-left: 10px; /* 3 */
+  }
+
+  .pm {
+    background: transparent;
+    border: 0px;
+    margin-top: 10px;
+  }
+
+  p.ridge {
+    border-style: ridge;
+    border-color: transparent;
+    margin-top: 30px;
+    -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+    -moz-box-shadow: 1px 1px 2px 3px #ccc;
+    box-shadow: 1.5px 1.5px 5px 5px #ccc;
+    border-radius: 15px;
+  }
+
+  p.videolist {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 15px;
+    height: 84px;
+    border-style: ridge;
+    border-color: transparent;
+    /* margin-top: 30px; */
+    -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+    -moz-box-shadow: 1px 1px 2px 3px #ccc;
+    box-shadow: 1.5px 1.5px 5px 5px #ccc;
+    border-radius: 5px;
+  }
+
+  .video {
+    height: 0px;
+    display: block;
+
+    margin: auto;
+  }
+}
+
+/* FOOTER */
+.body {
+  font-size: 16px;
+  height: 100%;
+}
+p {
+  color: #6c6c6f;
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #323233;
+}
+
+.navbar-brand span {
+  color: red;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 1.1em 1em !important;
+  font-size: 120%;
+  /* font-weight: 500; */
+  letter-spacing: 1px;
+  color: #fff;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: red;
+}
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  border-top: 3px solid red;
+}
+.dropdown-item:hover {
+  color: red;
+}
+nav {
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+  border: none;
+}
+
+.shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #212529;
+}
+
+.banner-text {
+  padding: 200px 0 150px 0;
+}
+.banner-heading {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-bottom: 30px;
+  color: red;
+}
+.banner-sub-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 50px;
+  color: RED;
+}
+
+.btn-banner {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+}
+.text-intro {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* mobile view */
+@media (max-width: 500px) {
+  .navbar-nav {
+    background-color: red;
+    border-top: 3px solid red;
+    color: #fff;
+    z-index: 1;
+    margin-top: 5px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.7em 1em !important;
+    font-size: 100%;
+    font-weight: 500;
+  }
+  .banner-text {
+    padding: 150px 0 150px 0;
+  }
+  .banner-heading {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .banner-sub-heading {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    padding: 150px 0 150px 0;
+  }
+  .banner-sub-heading {
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
+}
+
+/* FOOTER */
+
+.sen {
+  margin-left: 1px;
+  margin-top: 3px;
+}
+
+.send {
+  margin-left: 2px;
+  margin-top: 3px;
+}
+html {
+  height: 100%;
+}
+.footer {
+  background-color: brown;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* margin: 0 auto -60px; */
+}
+.footerfix {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.footertop {
+  min-height: 456px;
+}
+.App {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.hhi {
+  font-size: 30px;
+  color: #ec2044;
+  background-color: white;
+  line-height: 25px;
+  margin-right: 300px;
+}
+.nmn {
+  font-size: 15px;
+  background-color: white;
+  color: red;
+  line-height: 3px;
+}
+.margintopmainvideo {
+  margin-top: 0px;
+}
+.margintopmainarticle {
+  margin-top: 5px;
+}
+.player-wrapper {
+  position: relative;
+  /* padding-top: 56.25%; */
+  margin-top: 5px;
+  margin-left: -40px;
+  max-width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-top: 20px; */
+}
+.opop {
+  margin-right: 1100px;
+  margin-bottom: 5px;
+}
+
+.fullvideocss {
+  height: 50%;
+}
+.box {
+  margin-top: 10px;
+  padding: 12px 0;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+.boxquotes {
+  margin-top: 10px;
+  padding: 12px 0;
+  width: 100%;
+  height: 235px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+.box1 {
+  width: 90%;
+  margin-left: 10px;
+}
+.batname {
+  height: 80px;
+  /* margin-top: -15px; */
+}
+.heartname {
+  margin-top: 7px;
+  height: 57px;
+  margin-left: -5px;
+  /* margin-top: -15px; */
+}
+.batname1 {
+  height: 80px;
+  width: 200px;
+  margin-top: 5px;
+}
+.texttheloser {
+  font-size: 30px;
+}
+.Headerlogomain {
+  margin-left: 4px;
+  margin-top: -34px;
+  margin-bottom: -25px;
+}
+.firstlineparagraph {
+  margin-top: -20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 23px;
+  color: #425767;
+}
+
+.name2 {
+  text-align: justify;
+  margin-top: -7px;
+  line-height: 130%;
+  color: #ec2044;
+}
+
+#someDivname2 {
+  height: 2.6em; /* height is 2x line-height, so two lines will display */
+  overflow: hidden; /* prevents extra lines from being visible */
+}
+
+.name3 {
+  /* max-width: 240px; */
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  margin-top: -10px;
+}
+#someimage {
+  width: 222px;
+  margin-top: -8px;
+  height: 9em; /* height is 2x line-height, so two lines will display */
+}
+#someimagequotes {
+  width: 222px;
+  margin-top: 2px;
+  height: 9em; /* height is 2x line-height, so two lines will display */
+}
+#someDiv {
+  line-height: 1.4em;
+  height: 11.8em; /* height is 2x line-height, so two lines will display */
+  overflow: hidden; /* prevents extra lines from being visible */
+}
+.name4condition {
+  text-align: justify;
+  margin-top: 0px;
+}
+.name4 {
+  text-align: justify;
+  margin-top: -13px;
+}
+.name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  color: gray;
+  margin-top: -5px;
+}
+
+.namequotes {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  color: gray;
+  margin-top: -2px;
+}
+
+.name5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  color: gray;
+  margin-top: -4px;
+}
+.videodiv {
+  width: 100%;
+  height: auto;
+  border: #0f2042;
+  border-radius: 1px;
+}
+.linkaftervideo {
+  /* margin-left: 195px; */
+}
+
+.iconaftervideoscreen {
+  float: right;
+  margin-top: -45px;
+  margin-right: 110px;
+}
+.containervideoscreenwidth {
+  max-width: 960px;
+}
+.aftervideoscreen {
+  margin-top: 20px;
+  width: 11%;
+}
+.aftervideoscreen1 {
+  width: 89%;
+}
+.aftervideoscreenuser {
+  padding-left: 82px;
+}
+.aftervideoscreenrow {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.bigReactPlayercenter {
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containervideoscreen {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1060px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.buttonreportvideo {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: red;
+}
+.react-player {
+  position: absolute;
+  top: 80;
+  left: 0;
+}
+.button {
+  border-radius: 25px;
+  border-color: black;
+  color: black;
+  background-color: #ffb9cf;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 20px;
+  border: 0px;
+}
+.as {
+  border-radius: 20px;
+  color: black;
+  background-color: #ffb9cf;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 0px;
+  margin-right: 50px;
+}
+.df {
+  text-align: center;
+}
+.opom {
+  margin-right: 1200px;
+  margin-bottom: 5px;
+}
+.we {
+  height: 30px;
+  border-radius: 10px;
+}
+.hho {
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  line-height: 25px;
+  margin-right: 300px;
+}
+.oooo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* margin-right: 1150px; */
+}
+.popo {
+  margin-top: 50px;
+  background-color: red;
+}
+.byyy {
+  margin-bottom: 30px;
+}
+.footer {
+}
+.profilemargintop {
+  margin-top: 10px;
+}
+.dangerouslySetInnerHTML {
+  /* line-height: 0px; */
+  margin-top: 5px;
+  vertical-align: bottom;
+  line-height: 1em;
+}
+.footer1 {
+  height: 65px;
+  background-color: #0f2042;
+  text-align: center;
+}
+.footerrefrence {
+  margin-top: -7px;
+}
+.ioio {
+  height: 40px;
+  background-color: #6f69bf;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+}
+.wwwww {
+  color: #111;
+}
+.jaja {
+  height: 170px;
+  border-radius: 50px;
+}
+
+.TOPCONDIDATES {
+  color: red;
+  padding-top: 10px;
+}
+.ajo {
+  margin-top: 30px;
+  background-color: #ffb8cd;
+}
+.kaka {
+  font-size: 30px;
+  color: red;
+}
+.articleuploadmargin {
+  margin-top: 60px;
+}
+.ppp {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: -55px;
+}
+.ppp1 {
+  font-size: 24px;
+  font-weight: 700;
+  /* margin-top: -70px; */
+}
+.zzzz {
+  color: red;
+}
+.hu {
+  width: 100px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.articlewidth {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-family: "Nunito", sans-serif;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-size: 16px;
+  word-spacing: 0px;
+  margin: 0px 0px 12px;
+  padding: 0px;
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+  /* font-size: calc(14px + (20 - 14) * (200vw - 768px) / (1440 - 768)); */
+}
+.articlewidth.p {
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 1px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  cursor: auto;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 30px;
+  margin-left: 50px;
+  cursor: grabbing;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.headercountryandname {
+  /* margin-top: 40px; */
+}
+
+.bvc {
+  margin-top: -13px;
+  margin-bottom: -55px;
+  height: 150px;
+  width: 500px;
+  background: transparent;
+}
+
+.bvbv {
+  background: transparent;
+  border: 0px;
+  background-color: honeydew;
+}
+div.img-container {
+  overflow: hidden;
+}
+
+.artigo_nomearticlepg {
+  white-space: wrap;
+  display: none;
+  height: 15.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+
+  /* display: inline-block; */
+  max-width: 220px;
+  word-break: break-all; /* optional */
+}
+
+.artigo_nomearticlepgdeleteimg {
+  max-width: 200px;
+  margin-top: auto;
+}
+
+.artigo_nome {
+  white-space: wrap;
+  height: 22.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+
+  /* display: inline-block; */
+  max-width: 460px;
+  word-break: break-all; /* optional */
+}
+.laka {
+  text-align: left;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.mana {
+  margin-top: 20px;
+
+  margin-right: 1100px;
+}
+
+.actingmodelingP {
+  white-space: wrap;
+  display: none;
+  height: 1.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+  max-width: 220px;
+  word-break: break-all;
+}
+.llll {
+  margin-top: -50px;
+  margin-right: 280px;
+  margin-bottom: 100px;
+}
+.pppp {
+  margin-right: 280px;
+  margin-top: -115px;
+}
+
+.bbbb {
+  margin-right: 1065px;
+  margin-top: -150px;
+}
+
+.pm {
+  background: transparent;
+  border: 0px;
+  margin-top: 10px;
+}
+
+p.ridge {
+  border-style: ridge;
+  height: 300px;
+  border-color: transparent;
+  margin-top: 30px;
+  -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+  -moz-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow: 1.5px 1.5px 5px 5px #ccc;
+  border-radius: 15px;
+}
+
+p.videolist {
+  border-style: ridge;
+  border-color: transparent;
+  /* margin-top: 30px; */
+  -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+  -moz-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow: 1.5px 1.5px 5px 5px #ccc;
+  border-radius: 5px;
+}
+
+.kl {
+  width: 70px;
+  margin-top: 10px;
+  /* margin-right: 500px; */
+}
+.kl2 {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  border-radius: 50px;
+  margin-top: 10px;
+  /* margin-right: 500px; */
+}
+.k12containervideoscreenwidth {
+  margin-left: 100px;
+}
+.kk {
+  margin-top: 30px;
+  margin-left: -5px;
+}
+
+.kj {
+  margin-top: 130px;
+}
+
+.lo {
+  height: 35px;
+  border: 0px;
+
+  border-radius: 10px;
+}
+
+.background {
+  margin-top: -50px;
+  background-color: #f0f2f5;
+  height: 550px;
+}
+
+.backgroundsignup {
+  background-color: #f0f2f5;
+  height: 550px;
+}
+.background1 {
+  margin-top: -27px;
+}
+.imagenamearticleupload {
+  width: 100%;
+}
+.header-icon {
+  position: relative;
+  float: right;
+  /* top: -40px; */
+  /* left: -10px; */
+}
+.header-iconarticle {
+  position: relative;
+  float: right;
+  top: 7px;
+  left: 90px;
+}
+.header-iconarticleprofilimg {
+  position: relative;
+  float: right;
+  top: 7px;
+  left: 0px;
+}
+.largeline {
+  margin-left: 15px;
+  white-space: wrap;
+  height: 4.5em;
+  color: red;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+}
+
+.text {
+  color: red;
+  margin-top: 10px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.nnn {
+  font-family: "Poppins";
+  /* background-color: #f0f2f5; */
+}
+
+.nnn1 {
+  font-family: "Poppins";
+  margin-top: -27px;
+  /* background-color: #f0f2f5; */
+}
+
+.margintopmbl {
+  margin-top: 0px;
+}
+.kl2 {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  border-radius: 50px;
+  margin-top: 10px;
+  /* margin-right: 500px; */
+}
+.sekl {
+  padding-left: 48%;
+  margin-top: -37px;
+}
+/* .htp {
+  margin-top: 40px;
+  margin-left: -10px;
+} */
+.dot {
+  width: 33%;
+}
+.eyee {
+  width: 33%;
+}
+
+.stage {
+  /* margin-left: 90px; */
+  margin-top: 9px;
+  transform: translate(-50%, -50%);
+}
+.bettry {
+  width: 33%;
+}
+.usernamerow {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.llp {
+  font-family: "Poppins";
+
+  font-size: 28px;
+  font-weight: 400px;
+}
+.mnmn {
+  padding-top: 10px;
+  background-color: white;
+  width: 400px;
+  height: 420px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: -15px;
+}
+.po {
+  margin-top: 10px;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  background: transparent;
+  border-color: white;
+}
+.cv {
+  margin-top: 7px;
+  width: 229px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.vc {
+  margin-top: -40px;
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.buttonsize {
+  border-radius: 40px;
+  height: 50px;
+}
+
+.qw {
+  background-color: #f8017c;
+  border: transparent;
+}
+
+.wq {
+  background-color: #e1738c;
+  border: transparent;
+}
+.ew {
+  background-color: #f65312;
+  border: transparent;
+}
+.re {
+  background-color: #00a6c6;
+  border: transparent;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  background-color: red;
+  border: 0px;
+}
+.signupbtn {
+  border-color: #111;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+
+/* Clear floats */
+.clearfix::after {
+  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btnP2 {
+  margin-top: 0px;
+  color: #fff;
+}
+.ere {
+  background-color: "#F3F3F3";
+}
+
+.poius {
+  padding: 10px;
+  background: red;
+  display: table;
+  color: #fff;
+  cursor: pointer;
+}
+.poiusbloggers {
+  margin-bottom: 50px;
+  padding: 10px;
+  background: red;
+  display: table;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.poiu[type="file"] {
+  display: none;
+  text-align: center;
+}
+.EnterTitle {
+  /* width: 397px; */
+  height: 38px;
+  border-color: #ced4da;
+  background-color: white;
+  border-radius: 4px;
+}
+.usernameheader {
+  margin-top: 0px;
+}
+.selectinput {
+  width: 397px;
+  height: 38px;
+  border-color: #ced4da;
+  border-radius: 4px;
+}
+
+.articlelistmargins {
+  /* margin-top: 10; */
+  margin-bottom: 10px;
+}
+
+.selectinput2 {
+  width: 100%;
+  height: 38px;
+  border-color: #ced4da;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.kl2p {
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.kl4p {
+  margin-left: 10px;
+  margin-top: -20px;
+  font-size: 15px;
+}
+.videohome {
+  /* width: 100%; */
+  object-fit: fill;
+}
+.video {
+  object-fit: fill;
+  width: 100%;
+  height: 210px;
+  display: block;
+  margin: auto;
+}
+.videolistpage {
+  object-fit: fill;
+  width: 100%;
+  height: 220px;
+  display: block;
+  margin: auto;
+}
+.afterReactPlayercenter {
+  max-width: 100%; /* 2 */
+  overflow: auto;
+  height: 50px;
+}
+.yyy {
+  color: beige;
+  height: 43px;
+  text-align: center;
+}
+.heartviews {
+  width: 61%;
+}
+.stageeye {
+  width: 130px;
+  position: absolute;
+  right: 300px;
+}
+.stagetop {
+  margin-left: 100px;
+  width: 50%;
+}
+.usernamemargintop {
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.articleheartline {
+  max-width: 100%;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+#title_message {
+  /* clear: both; */
+  /* display: block; */
+  /* float: left; */
+  /* margin: 10px auto 5px 20px; */
+  /* width: 28%; */
+}
+.firstartical {
+  margin-top: 0px;
+}
+.contact {
+  cursor: grabbing;
+  color: white;
+}
+.contact:hover {
+  color: white;
+}
+.Headerlogoheader {
+  margin-top: 30px;
+}
+.readmorediv {
+  margin-right: 70px;
+  margin-left: auto;
+  border-radius: 30px;
+  margin-top: -4px;
+  background-color: red;
+  width: 120px;
+}
+.readmore {
+  color: white;
+  padding: 8px;
+}
+
+.uploadbloggersmargintop {
+  margin-top: 80px;
+}
+.uploadquotessmargintop {
+  margin-top: 150px;
+}
+.mainarticletitle {
+  color: red;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fullarticlesimage {
+  width: 1060px;
+}
+.uservideos {
+  width: 233px;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .hideMe {
+    display: none;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  p.videolist {
+    height: 220px;
+    border-style: ridge;
+    border-color: transparent;
+    margin-left: 0px;
+    margin-top: 2px;
+    -webkit-box-shadow: 10px 25px 25px 30px #ccc;
+    -moz-box-shadow: 1px 1px 2px 3px #ccc;
+    box-shadow: 1.5px 1.5px 5px 5px #ccc;
+    border-radius: 5px;
+  }
+  .batname {
+    height: 80px;
+    width: 75px;
+    /* margin-top: -15px; */
+  }
+  .batname1 {
+    height: 80px;
+    width: 180px;
+    margin-top: 5px;
+  }
+
+  .fullarticlesimage {
+    width: 300px;
+    height: 200px;
+  }
+  #someimage {
+    margin-top: -1px;
+    width: 252px;
+    height: 9em; /* height is 2x line-height, so two lines will display */
+  }
+  .uploadquotessmargintop {
+    margin-top: 20px;
+  }
+  .uploadbloggersmargintop {
+    margin-top: 20px;
+  }
+  .name2 {
+    margin-top: -8px;
+  }
+  .uservideos {
+    width: 263px;
+  }
+  .header-icon {
+    position: relative;
+    float: right;
+    /* top: -40px; */
+    left: 20px;
+  }
+  .mainarticletitle {
+    color: red;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    font-size: 24px;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .readmorediv {
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: red;
+    width: 90px;
+  }
+  .readmore {
+    color: white;
+    padding: 8px;
+  }
+  .aftervideoscreenrow {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+  .articleuploadmargin {
+    margin-top: 0px;
+  }
+  .profilemargintop {
+    margin-top: 0px;
+  }
+  .Headerlogoheader {
+    margin-top: 30px;
+  }
+  .name4 {
+    text-align: justify;
+    margin-top: -12px;
+    margin-left: 14px;
+  }
+  .header-iconarticle {
+    position: relative;
+    float: right;
+    top: 7px;
+    left: 100px;
+  }
+  .header-iconarticleprofilimg {
+    position: relative;
+    float: right;
+    top: 7px;
+    left: -9px;
+  }
+  .usernamemargintop {
+    margin-top: -40px;
+    margin-bottom: -20px;
+  }
+  .contact {
+    font-size: 15px;
+    cursor: grabbing;
+    color: white;
+  }
+  .firstartical {
+    margin-top: 0px;
+  }
+  .losergmail {
+    font-size: 15px;
+    font-weight: 450;
+  }
+  .Headerlogomain {
+    margin-left: 6px;
+    margin-top: -32px;
+    margin-bottom: -15px;
+  }
+  .aftervideoscreenuser {
+    padding-left: 4px;
+  }
+  #title_message {
+    clear: none;
+    display: none;
+    float: none;
+  }
+  .sekl {
+    padding-left: 13%;
+    margin-top: -37px;
+  }
+  .articleheartline {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-top: -10px;
+    margin-bottom: -2px;
+  }
+  .sen {
+    margin-left: -5px;
+    margin-top: 2px;
+  }
+
+  .send {
+    margin-left: -4px;
+    margin-top: 3px;
+  }
+
+  .stageeye {
+    width: 100px;
+    position: absolute;
+    right: 10px;
+  }
+  .stagetop {
+    margin-left: 35px;
+    width: 49%;
+  }
+  .heartviews {
+    width: 40%;
+  }
+
+  .bigReactPlayercenter {
+    max-height: 280px;
+  }
+  .k12containervideoscreenwidth {
+    margin-left: 25px;
+  }
+
+  .videodiv {
+    width: 100%;
+    height: auto;
+    border: #0f2042;
+    margin-top: 10px;
+    border-radius: 1px;
+  }
+  .iconaftervideoscreen {
+    float: right;
+    margin-top: -20px;
+    /* margin-bottom: -200px; */
+    margin-right: 40px;
+  }
+  .linkaftervideo {
+    margin-left: 45px;
+    /* max-width: 200px; */
+  }
+
+  .artigo_nomearticlepgdeleteimg {
+    max-width: 200px;
+    margin-top: -38px;
+  }
+
+  .video {
+    object-fit: fill;
+    width: 100%;
+    height: 148px;
+    display: block;
+    margin: auto;
+  }
+  .largeline {
+    /* margin-top: -12px; */
+    margin-left: 20px;
+    color: red;
+    height: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+  }
+
+  .margintopmbl {
+    margin-top: 20px;
+  }
+  .headercountryandname {
+    margin-top: -8px;
+
+    /* white-space: wrap; */
+    /* height: 1.5em; */
+    /* text-overflow: ellipsis; */
+
+    /* display: inline-block; */
+    /* max-width: 100px; */
+    /* word-break: break-all; optional */
+  }
+
+  .usernameheader {
+    margin-top: -18px;
+  }
+  .usernamerow {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+  .articlelistmargins {
+    /* margin-top: 10; */
+    margin-bottom: 10px;
+    margin-left: 20;
+    margin-right: 20;
+  }
+
+  .bvc {
+    margin-top: -10px;
+    margin-bottom: -19px;
+    height: 100px;
+    width: 250px;
+    background: transparent;
+  }
+
+  .yyy {
+    text-align: justify;
+  }
+
+  .selectinput {
+    width: auto;
+    height: 38px;
+    border-color: #ced4da;
+    border-radius: 4px;
+  }
+  .selectinput2 {
+    width: 100%;
+    height: 38px;
+    border-color: #ced4da;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .ppp {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  .sano {
+    font-size: 16px;
+  }
+  .margintopmainvideo {
+    margin-top: 20px;
+  }
+  .margintopmainarticle {
+    margin-top: 10px;
+  }
+  .player-wrapper {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    max-width: 380px;
+    text-align: center;
+    height: auto;
+  }
+  .laka {
+    margin-right: 10px;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 13px;
+    max-width: 350px;
+    /* margin-top: -40px; */
+  }
+
+  .btnP2 {
+    color: #fff;
+    margin-top: -5px;
+  }
+  .buttonsize {
+    border-radius: 18px;
+    height: 60px;
+    font-size: 15px;
+  }
+  .qw {
+    background-color: #f8017c;
+    margin-bottom: 10px;
+  }
+
+  .footer1 {
+    height: 150px;
+    background-color: #0f2042;
+    text-align: justify;
+  }
+
+  .po {
+    margin-top: 20px;
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    background: transparent;
+    border-color: white;
+  }
+  .text {
+    color: red;
+    margin-top: -110px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .llp {
+    font-size: 18px;
+    font-weight: 400px;
+    text-align: center;
+  }
+  .vc {
+    margin-top: -10px;
+    width: 230px;
+    height: 50px;
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border: 0px;
+  }
+
+  .mnmn {
+    background-color: white;
+    width: 100%;
+    height: 410px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .background {
+    background-color: #f0f2f5;
+    height: 500px;
+    text-align: center;
+  }
+
+  .as {
+    text-align: center;
+    border-radius: 20px;
+    color: black;
+    background-color: FFB8CD;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 0px;
+  }
+
+  .hu {
+    width: 20%;
+    height: 100px;
+    color: #ddd;
+    margin-bottom: 25px;
+  }
+  .lo {
+    width: 10px;
+    border: 0px;
+
+    border-radius: 10px;
+  }
+  .ma {
+    width: 110px;
+  }
+  .ss {
+    margin-left: 80px;
+  }
+}
