@@ -459,7 +459,7 @@ function Header(props) {
                       data-toggle="collapse"
                       data-target=".navbar-collapse.show"
                     >
-                      Post Modeling Images
+                      Post Modelling Images
                     </Link>
                   </div>
                 </li>
@@ -583,7 +583,7 @@ function Header(props) {
                         data-toggle="collapse"
                         data-target=".navbar-collapse.show"
                       >
-                        artical
+                        article
                       </Link>
                       <Link
                         to={"/Videolist/" + share_local_news}
@@ -929,7 +929,7 @@ function Header(props) {
                     style={{ color: "white" }}
                   >
                     <b>
-                      ACTING&<br></br>MODLELING
+                      ACTING&<br></br>MODELLING
                     </b>
                   </Link>
                 </li>

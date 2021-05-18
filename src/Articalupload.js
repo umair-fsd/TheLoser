@@ -288,8 +288,7 @@ class Articalupload extends React.Component {
             <Col md={3}></Col>
             <Col>
               <label class="poius">
-                {" "}
-                Choose artical image
+                Choose article image
                 <input
                   type="file"
                   accept="image/*"
@@ -355,7 +354,7 @@ class Articalupload extends React.Component {
               onClick={() => this.articleupload()}
               block
             >
-              Post Artical
+              Post
             </Button>
           </Row>
         </Container>
