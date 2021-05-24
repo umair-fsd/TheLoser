@@ -25,13 +25,16 @@ import Modal, { closeStyle } from "simple-react-modal";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "./Header";
 import { ButtonGroup, ButtonMenu, MenuItem } from "react-rainbow-components";
+
 import $ from "jquery";
 
 class Artical extends Component {
   state = {
     count: "",
+    comment: "",
+    postId: "",
+    commentsList: [],
   };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -218,6 +221,7 @@ class Artical extends Component {
   }
 
   componentDidMount() {
+    console.log("ressss", localStorage.getItem("myData"));
     $(document).ready(function () {
       $("html, body").animate({ scrollTop: 0 }, "fast");
     });
@@ -225,7 +229,31 @@ class Artical extends Component {
       id: this.props.match.params.link,
       componentupdate: true,
     });
+    const fetchPostId = async () => {
+      console.log("fetchpost is runninf");
+      const { location } = this.props;
+      const reversePath = await location.pathname.split("").reverse().join("");
+      var newString = await reversePath.substr(0, reversePath.indexOf("/"));
+      const id = await newString.split("").reverse().join("");
+      await this.setState({ postId: id });
+      const res = await axios.post(`${window.$API_URL}getcomments`, {
+        postId: this.state.postId,
+      });
 
+      if (res.data === "No Data Found") {
+        this.setState({
+          commentsList: [
+            {
+              comment_text: "No Comment On This Article",
+            },
+          ],
+        });
+      } else {
+        this.setState({ commentsList: res.data });
+        console.log(this.state.commentsList);
+      }
+    };
+    fetchPostId();
     // this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
   }
 
@@ -288,6 +316,57 @@ class Artical extends Component {
   close() {
     this.setState({ show: false });
   }
+
+  // here handle the comment to add to backend
+  handleComment = async () => {
+    console.log(this.state.comment);
+    if (this.state.comment === undefined || this.state.comment === "") {
+      console.log("khali ha");
+      return alert("please Add Comment first");
+    } else {
+      const userId = localStorage.getItem("myData");
+      const userName = localStorage.getItem("userName");
+      const userImage = localStorage.getItem("userImage");
+      let now = new Date();
+      let minutes = now.getMinutes() + 1;
+      if (minutes <= 9) {
+        minutes = `0${minutes}`;
+      }
+      let hours = now.getHours();
+      if (hours <= 9) {
+        hours = `0${hours}`;
+      }
+      const date = `${now.toDateString()} at ${hours}:${minutes} `;
+      const obj = {
+        userId,
+        comment_text: this.state.comment,
+        postId: this.state.postId,
+        user_img: userImage,
+        date: date,
+        username: userName,
+      };
+      console.log(obj);
+      try {
+        console.log(obj);
+        const res = await axios.post(`${window.$API_URL}postcomments`, obj);
+        console.log(res.data);
+        if (res.data === "1") {
+          this.setState({ comment: "" });
+          const fetchComments = async () => {
+            const res = await axios.post(`${window.$API_URL}getcomments`, {
+              postId: this.state.postId,
+            });
+            this.setState({ commentsList: res.data });
+          };
+          fetchComments();
+        } else {
+          this.setState({ commentsList: this.state.commentsList });
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
 
   render() {
     const isLoggedIn = this.state.like;
@@ -414,7 +493,93 @@ class Artical extends Component {
             </div>
           </div>
         </Container>
-
+        <Container>
+          <h1>Comments</h1>
+          <ul
+            style={{
+              padding: 0,
+            }}
+          >
+            {this.state.commentsList?.map((item, key) => {
+              return (
+                <li
+                  key={key}
+                  style={{
+                    listStyle: "none",
+                    border: "1px solid lightgray",
+                    padding: "10px",
+                    margin: "5px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      height: "30px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      style={{
+                        height: "30px",
+                        width: "30px",
+                        borderRadius: "15px",
+                        display: "flex",
+                        marginRight: "5px",
+                      }}
+                      src={`${window.$API_URLIMG}${item.user_img}`}
+                      alt="pic"
+                    />
+                    <h6
+                      style={{
+                        margin: "0",
+                      }}
+                    >
+                      {item.username === "Write your name"
+                        ? "User"
+                        : item.username}
+                    </h6>
+                    <p
+                      style={{
+                        margin: 0,
+                        marginLeft: "10px",
+                      }}
+                    >
+                      {item.date}
+                    </p>
+                  </div>
+                  <p
+                    style={{
+                      margin: 0,
+                      marginLeft: "35px",
+                      width: "100%",
+                    }}
+                  >
+                    {item.comment_text}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        </Container>
+        <Container>
+          <textarea
+            style={{
+              width: "100%",
+              height: "200px",
+              borderRadius: "20px",
+              padding: "10px",
+            }}
+            className="textArea"
+            onChange={(e) => {
+              this.setState({ comment: e.target.value });
+            }}
+            placeholder="Enter your Comment"
+            value={this.state.comment}
+          ></textarea>
+          <button style={{ borderRadius: "20px" }} onClick={this.handleComment}>
+            Comment
+          </button>
+        </Container>
         <Container>
           <div>
             <Row style={{ width: "99%" }}>

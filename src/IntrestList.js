@@ -21,6 +21,7 @@ import {
   Label,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./css/Interest.css";
 
 function IntrestList(props) {
   const [responseData, setResponseData] = useState([]);
@@ -47,6 +48,9 @@ function IntrestList(props) {
         }
       });
   }, []);
+  {
+    console.log("........responseData", responseData);
+  }
 
   React.useEffect(() => {
     fetchData();
@@ -69,34 +73,19 @@ function IntrestList(props) {
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         <b className="Allfollwers">All Intrests</b>
         {responseData.map((item, key) => (
-          <Link
-            to="/Useeffecthook"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
-            <div className="row ">
-              <p
-                className="videolist "
-                style={{ backgroundColor: "white", borderRadius: 30 }}
-              >
-                <Row>
-                  <Col md={3}>
-                    <img
-                      className="folwingloserpic"
-                      src={"http://localhost:3000/" + item.user_img}
-                    />
-                  </Col>
-                  <Col md={4}>
-                    <p className="usernamefolwing namelist">
-                      <b>{item.username}</b>
-                    </p>
-                  </Col>
-                  <Col md={4}>
-                    <p className="namefollwing namelist">
-                      {item.conatct_email}
-                    </p>
-                  </Col>
-                </Row>
-              </p>
+          <Link to={"/Profile/" + item.user_id}>
+            <div className="interested-container">
+              <div className="right-container">
+                <img
+                  className="image"
+                  src={
+                    "https://preettheloserapis.theloser.live/" + item.user_img
+                  }
+                  alt="pic"
+                />
+                <h3 className="usernamefolwing namelist">{item.username}</h3>
+              </div>
+              <div className="left-container">View Profile</div>
             </div>
           </Link>
         ))}

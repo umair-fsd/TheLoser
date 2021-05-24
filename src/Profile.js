@@ -30,6 +30,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Header from "./Header";
 import { withRouter } from "react-router-dom";
 import $ from "jquery";
+import "./css/Profile.css";
 
 var thistext = "";
 
@@ -325,7 +326,7 @@ class Profile extends React.Component {
                     onClick={() => this.Articles()}
                     className="ew buttonsize"
                   >
-                    <p className="btnP2">Articles</p>
+                    <p className="btnP2">Articles & Poetry</p>
                   </button>
                 </Col>
               </Row>
@@ -393,15 +394,22 @@ class Profile extends React.Component {
                   <Row
                     style={{ marginLeft: 10, marginTop: 10, marginBottom: -15 }}
                   >
-                    <Link to={"/Followerslist/" + this.state.follow_id}>
-                      <p>Fans: &nbsp;</p>
-                      {this.state.intrests}
-                    </Link>
-                    &nbsp;
-                    <Link to={"/IntrestList/" + this.state.follow_id}>
-                      <p>Intrests: &nbsp;</p>
-                      {this.state.fans}
-                    </Link>
+                    <div className="follower-container">
+                      <Link
+                        className="fan-container"
+                        to={"/Followerslist/" + this.state.follow_id}
+                      >
+                        <h2> {this.state.intrests}</h2>
+                        <h5>Fans</h5>
+                      </Link>
+                      <Link
+                        className="interest-container"
+                        to={"/IntrestList/" + this.state.follow_id}
+                      >
+                        <h2>{this.state.fans}</h2>
+                        <h5>Intrests</h5>
+                      </Link>
+                    </div>
                   </Row>
                   <p>............................................</p>
                   <Accordion>

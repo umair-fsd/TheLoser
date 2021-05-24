@@ -1,0 +1,13 @@
+.follower-container {
+  display: flex;
+}
+.fan-container {
+  margin-right: 10px;
+}
+.fan-container,
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

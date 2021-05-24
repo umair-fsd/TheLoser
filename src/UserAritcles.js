@@ -188,7 +188,7 @@ class UserAritcles extends React.Component {
               </Col>
               <Col>
                 <button className="ew buttonsize">
-                  <p className="btnP2">Articles</p>
+                  <p className="btnP2">Articles & Poetry</p>
                 </button>
               </Col>
             </Row>

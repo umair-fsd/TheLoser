@@ -21,10 +21,10 @@ import $ from "jquery";
 
 global.id = "";
 
-// window.$API_URL = "http://localhost:3000/";
+window.$API_URL = "http://localhost:3000/";
 // window.$API_URLIMG = "http://localhost:3000/";
 
-window.$API_URL = "https://preettheloserapis.theloser.live/";
+// window.$API_URL = "https://preettheloserapis.theloser.live/";
 window.$API_URLIMG = "https://preettheloserapis.theloser.live/";
 
 class Sign extends Component {
@@ -66,6 +66,9 @@ class Sign extends Component {
           toast.error("User blocked Please contact Us");
         } else {
           localStorage.setItem("myData", res.data[0].user_id);
+          localStorage.setItem("userImage", res.data[0].user_img);
+          localStorage.setItem("userName", res.data[0].username);
+
           toast.success("Login successfully");
           let data = localStorage.getItem("myData");
           if (data !== null) {
@@ -98,6 +101,8 @@ class Sign extends Component {
           toast.error("User blocked Please contact Us");
         } else {
           localStorage.setItem("myData", res.data[0].user_id);
+          localStorage.setItem("userImage", res.data[0].user_img);
+          localStorage.setItem("userName", res.data[0].username);
           toast.success("Login successfully");
           let data = localStorage.getItem("myData");
           if (data !== null) {
@@ -176,7 +181,7 @@ class Sign extends Component {
                     {" "}
                     <button className="vc">Create New Account</button>
                   </Link>
-                  <GoogleLogin
+                  {/* <GoogleLogin
                     style={{ backgroundColor: "red" }}
                     clientId="966918416549-k4j6sno1onp0p0vi3j7kjd4e3nu581eo.apps.googleusercontent.com"
                     render={(renderProps) => (
@@ -196,8 +201,8 @@ class Sign extends Component {
                     onSuccess={this.responseGoogle}
                     onFailure={this.responseGoogle}
                     cookiePolicy={"single_host_origin"}
-                  ></GoogleLogin>
-                  <hr></hr>
+                  ></GoogleLogin> */}
+
                   <button onClick={() => this.forgotpass()} className="vc">
                     Forgot password
                   </button>

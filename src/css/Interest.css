@@ -1,0 +1,28 @@
+.interested-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+.interested-container .right-container {
+  display: flex;
+  align-items: center;
+}
+.interested-container .right-container .image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid #ff0000;
+  margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .usernamefolwing {
+    margin: 0;
+  }
+}

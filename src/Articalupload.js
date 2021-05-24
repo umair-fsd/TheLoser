@@ -288,7 +288,7 @@ class Articalupload extends React.Component {
             <Col md={3}></Col>
             <Col>
               <label class="poius">
-                Choose article image
+                Choose Image
                 <input
                   type="file"
                   accept="image/*"

@@ -21,6 +21,7 @@ import {
   Label,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./css/Interest.css";
 
 function Followerslist(props) {
   const [responseData, setResponseData] = useState([]);
@@ -73,30 +74,27 @@ function Followerslist(props) {
             to={"/Profile/" + item.user_id}
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
-            <div className="row ">
-              <p
-                className="videolist "
-                style={{ backgroundColor: "white", borderRadius: 30 }}
+            <div>
+              <div
+                style={{
+                  maxWidth: "600px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+                className="interested-container"
               >
-                <Row>
-                  <Col md={3}>
-                    <img
-                      className="folwingloserpic"
-                      src={"http://localhost:3000/" + item.user_img}
-                    />
-                  </Col>
-                  <Col md={4}>
-                    <p className="usernamefolwing namelist">
-                      <b>{item.username}</b>
-                    </p>
-                  </Col>
-                  <Col md={4}>
-                    <p className="namefollwing namelist">
-                      {item.conatct_email}
-                    </p>
-                  </Col>
-                </Row>
-              </p>
+                <div className="right-container">
+                  <img
+                    className="image"
+                    src={
+                      "https://preettheloserapis.theloser.live/" + item.user_img
+                    }
+                    alt="pic"
+                  />
+                  <h3 className="usernamefolwing namelist">{item.username}</h3>
+                </div>
+                <div className="left-container">View Profile</div>
+              </div>
             </div>
           </Link>
         ))}

@@ -30,6 +30,7 @@ import {
   Label,
 } from "react-bootstrap";
 import $ from "jquery";
+import "./css/Home.css";
 
 class home extends React.Component {
   constructor(props) {
@@ -51,6 +52,10 @@ class home extends React.Component {
       pArticletext2: "",
       pArticletext3: "",
       pArticletext4: "",
+      image1: "",
+      image2: "",
+      image3: "",
+      image4: "",
     };
   }
   componentDidMount() {
@@ -123,10 +128,12 @@ class home extends React.Component {
   fetchdataArticle1() {
     axios.post(window.$API_URL + "admin_Article_p1").then((res) => {
       var d = $("<div>").html(res.data[0].pragraph_text);
-      console.log(d[0].innerText, "res.data[0]");
+      console.log("..........res", res);
       this.setState({
         pArticle1: res.data[0],
         pArticletext1: d[0].innerText,
+        image1: `${window.$API_URLIMG}${res.data[0].imagename}`,
+        user_image: `${window.$API_URLIMG}${res.data[0].user_img}`,
       });
     });
   }
@@ -137,6 +144,8 @@ class home extends React.Component {
       this.setState({
         pArticle2: res.data[0],
         pArticletext2: d[0].innerText,
+        image2: `${window.$API_URLIMG}${res.data[0].imagename}`,
+        user_image2: `${window.$API_URLIMG}${res.data[0].user_img}`,
       });
     });
   }
@@ -146,15 +155,20 @@ class home extends React.Component {
       this.setState({
         pArticle3: res.data[0],
         pArticletext3: d[0].innerText,
+        image3: `${window.$API_URLIMG}${res.data[0].imagename}`,
+        user_image3: `${window.$API_URLIMG}${res.data[0].user_img}`,
       });
     });
   }
   fetchdataArticle4() {
     axios.post(window.$API_URL + "admin_Article_p4").then((res) => {
       var d = $("<div>").html(res.data[0].pragraph_text);
+      console.log(".........article4", res);
       this.setState({
         pArticle4: res.data[0],
         pArticletext4: d[0].innerText,
+        image4: `${window.$API_URLIMG}${res.data[0].imagename}`,
+        user_image4: `${window.$API_URLIMG}${res.data[0].user_img}`,
       });
     });
   }
@@ -221,19 +235,298 @@ class home extends React.Component {
               </Col>
             </div>
             <div>
-              <Row style={{ width: "99%" }}>
-                <Col md={3}>
-                  <div className="box articlelistmargins">
-                    <div className="box1">
-                      <h4 className="firstlineparagraph">
+              <div className="homegrid">
+                <div className="gidItem">
+                  <div className="headerItem">
+                    <div>
+                      <h4
+                        style={{
+                          margin: "0",
+                        }}
+                        className="firstlineparagraph"
+                      >
                         {this.state.pArticle1.category}
                       </h4>
                       <Link to={"/Profile/" + this.state.pArticle1.user_id}>
-                        <h5 className="name cursor">
+                        <h5
+                          style={{
+                            margin: "0",
+                          }}
+                          className="name cursor"
+                        >
                           by {this.state.pArticle1.username}
                         </h5>
                       </Link>
+                    </div>
+                    <div>
+                      <img
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "50%",
+                          padding: "5px",
+                          border: "1px solid #ff0000 ",
+                        }}
+                        src={this.state.user_image}
+                      />
+                    </div>
+                  </div>
+                  <div className="footerItem">
+                    <h5 className="name2" id="someDivname2">
+                      <i>{this.state.pArticle1.title}</i>
+                    </h5>
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "150px",
+                        marginBottom: "10px",
+                      }}
+                      src={this.state.image1}
+                    />
 
+                    <p
+                      className="name3"
+                      id="someDiv"
+                      style={{ textAlign: "justify" }}
+                    >
+                      {this.state.pArticletext1}
+                    </p>
+                    <Link to={"/Artical/" + this.state.pArticle1.paragraph_id}>
+                      <p className="name4 cursor">
+                        READ COMPLETE&nbsp;
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+                {/* Article # 2 */}
+                <div className="gidItem">
+                  <div className="headerItem">
+                    <div>
+                      <h4
+                        style={{
+                          margin: "0",
+                        }}
+                        className="firstlineparagraph"
+                      >
+                        {this.state.pArticle2.category}
+                      </h4>
+                      <Link to={"/Profile/" + this.state.pArticle2.user_id}>
+                        <h5
+                          style={{
+                            margin: "0",
+                          }}
+                          className="name cursor"
+                        >
+                          by {this.state.pArticle2.username}
+                        </h5>
+                      </Link>
+                    </div>
+                    <div>
+                      <img
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "50%",
+                          padding: "5px",
+                          border: "1px solid #ff0000 ",
+                        }}
+                        src={this.state.user_image2}
+                      />
+                    </div>
+                  </div>
+                  <div className="footerItem">
+                    <h5 className="name2" id="someDivname2">
+                      <i>{this.state.pArticle2.title}</i>
+                    </h5>
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "150px",
+                        marginBottom: "10px",
+                      }}
+                      src={this.state.image2}
+                    />
+
+                    <p
+                      className="name3"
+                      id="someDiv"
+                      style={{ textAlign: "justify" }}
+                    >
+                      {this.state.pArticletext2}
+                    </p>
+                    <Link to={"/Artical/" + this.state.pArticle2.paragraph_id}>
+                      <p className="name4 cursor">
+                        READ COMPLETE&nbsp;
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+                {/* Article # 3 */}
+                <div className="gidItem">
+                  <div className="headerItem">
+                    <div>
+                      <h4
+                        style={{
+                          margin: "0",
+                        }}
+                        className="firstlineparagraph"
+                      >
+                        {this.state.pArticle3.category}
+                      </h4>
+                      <Link to={"/Profile/" + this.state.pArticle3.user_id}>
+                        <h5
+                          style={{
+                            margin: "0",
+                          }}
+                          className="name cursor"
+                        >
+                          by {this.state.pArticle3.username}
+                        </h5>
+                      </Link>
+                    </div>
+                    <div>
+                      <img
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "50%",
+                          padding: "5px",
+                          border: "1px solid #ff0000 ",
+                        }}
+                        src={this.state.user_image3}
+                      />
+                    </div>
+                  </div>
+                  <div className="footerItem">
+                    <h5 className="name2" id="someDivname2">
+                      <i>{this.state.pArticle3.title}</i>
+                    </h5>
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "150px",
+                        marginBottom: "10px",
+                      }}
+                      src={this.state.image3}
+                    />
+
+                    <p
+                      className="name3"
+                      id="someDiv"
+                      style={{ textAlign: "justify" }}
+                    >
+                      {this.state.pArticletext1}
+                    </p>
+                    <Link to={"/Artical/" + this.state.pArticle3.paragraph_id}>
+                      <p className="name4 cursor">
+                        READ COMPLETE&nbsp;
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="gidItem">
+                  <div className="headerItem">
+                    <div>
+                      <h4
+                        style={{
+                          margin: "0",
+                        }}
+                        className="firstlineparagraph"
+                      >
+                        {this.state.pArticle4.category}
+                      </h4>
+                      <Link to={"/Profile/" + this.state.pArticle4.user_id}>
+                        <h5
+                          style={{
+                            margin: "0",
+                          }}
+                          className="name cursor"
+                        >
+                          by {this.state.pArticle4.username}
+                        </h5>
+                      </Link>
+                    </div>
+                    <div>
+                      <img
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "50%",
+                          padding: "5px",
+                          border: "1px solid #ff0000 ",
+                        }}
+                        src={this.state.user_image4}
+                      />
+                    </div>
+                  </div>
+                  <div className="footerItem">
+                    <h5 className="name2" id="someDivname2">
+                      <i>{this.state.pArticle4.title}</i>
+                    </h5>
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "150px",
+                        marginBottom: "10px",
+                      }}
+                      src={this.state.image4}
+                    />
+
+                    <p
+                      className="name3"
+                      id="someDiv"
+                      style={{ textAlign: "justify" }}
+                    >
+                      {this.state.pArticletext1}
+                    </p>
+                    <Link to={"/Artical/" + this.state.pArticle4.paragraph_id}>
+                      <p className="name4 cursor">
+                        READ COMPLETE&nbsp;
+                        <i class="fa fa-angle-right"></i>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* <Row style={{ width: "99%" }}>
+                <Col md={3}>
+                  <div className="box articlelistmargins">
+                    <div className="box1">
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <div>
+                          <h4 className="firstlineparagraph">
+                            {this.state.pArticle1.category}
+                          </h4>
+                          <Link to={"/Profile/" + this.state.pArticle1.user_id}>
+                            <h5 className="name cursor">
+                              by {this.state.pArticle1.username}
+                            </h5>
+                          </Link>
+                        </div>
+                        <div>
+                          <img
+                            style={{
+                              width: "40px",
+                              height: "40px",
+                              borderRadius: "50%",
+                              padding: "5px",
+                              border: "1px solid #ff0000 ",
+                              marginBottom: "15px",
+                            }}
+                            src={this.state.image1}
+                          />
+                        </div>
+                      </div>
                       <h5 className="name2" id="someDivname2">
                         <i>{this.state.pArticle1.title}</i>
                       </h5>
@@ -259,14 +552,36 @@ class home extends React.Component {
                 <Col md={3}>
                   <div className="box articlelistmargins">
                     <div className="box1">
-                      <h4 className="firstlineparagraph">
-                        {this.state.pArticle2.category}
-                      </h4>
-                      <Link to={"/Profile/" + this.state.pArticle2.user_id}>
-                        <h5 className="name cursor">
-                          by {this.state.pArticle2.username}
-                        </h5>
-                      </Link>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <div>
+                          <h4 className="firstlineparagraph">
+                            {this.state.pArticle2.category}
+                          </h4>
+                          <Link to={"/Profile/" + this.state.pArticle2.user_id}>
+                            <h5 className="name cursor">
+                              by {this.state.pArticle2.username}
+                            </h5>
+                          </Link>
+                        </div>
+                        <div>
+                          <img
+                            style={{
+                              width: "40px",
+                              height: "40px",
+                              borderRadius: "50%",
+                              padding: "5px",
+                              border: "1px solid #ff0000",
+                              marginBottom: "15px",
+                            }}
+                            src={this.state.image2}
+                          />
+                        </div>
+                      </div>
                       <h5 className="name2" id="someDivname2">
                         <i>{this.state.pArticle2.title}</i>
                       </h5>
@@ -289,35 +604,66 @@ class home extends React.Component {
                   </div>
                 </Col>
                 <Col md={3}>
-                  <div className="box articlelistmargins">
-                    <div className="box1">
-                      <h4 className="firstlineparagraph">
-                        {this.state.pArticle3.category}
-                      </h4>
-                      <Link to={"/Profile/" + this.state.pArticle3.user_id}>
-                        <h5 className="name cursor">
-                          by {this.state.pArticle3.username}
-                        </h5>
-                      </Link>
+                  <div className="box1">
+                    <div
+                      style={{
+                        height: "auto",
+                      }}
+                      className="box  articlelistmargins"
+                    >
+                      <div>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div>
+                            <h4 className="firstlineparagraph">
+                              {this.state.pArticle3.category}
+                            </h4>
+                            <Link
+                              to={"/Profile/" + this.state.pArticle3.user_id}
+                            >
+                              <h5 className="name cursor">
+                                by {this.state.pArticle3.username}
+                              </h5>
+                            </Link>
+                          </div>
+                          <div>
+                            <img
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                borderRadius: "50%",
+                                padding: "5px",
+                                border: "1px solid #ff0000 ",
+                                marginBottom: "15px",
+                              }}
+                              src={this.state.image3}
+                            />
+                          </div>
+                        </div>
 
-                      <h5 className="name2" id="someDivname2">
-                        <i>{this.state.pArticle3.title}</i>
-                      </h5>
-                      <p
-                        className="name3"
-                        id="someDiv"
-                        style={{ textAlign: "justify" }}
-                      >
-                        {this.state.pArticletext3}
-                      </p>
-                      <Link
-                        to={"/Artical/" + this.state.pArticle3.paragraph_id}
-                      >
-                        <p className="name4 cursor">
-                          READ COMPLETE&nbsp;
-                          <i class="fa fa-angle-right"></i>
+                        <h5 className="name2" id="someDivname2">
+                          <i>{this.state.pArticle3.title}</i>
+                        </h5>
+                        <p
+                          className="name3"
+                          id="someDiv"
+                          style={{ textAlign: "justify" }}
+                        >
+                          {this.state.pArticletext3}
                         </p>
-                      </Link>
+                        <Link
+                          to={"/Artical/" + this.state.pArticle3.paragraph_id}
+                        >
+                          <p className="name4 cursor">
+                            READ COMPLETE&nbsp;
+                            <i class="fa fa-angle-right"></i>
+                          </p>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </Col>
@@ -325,17 +671,43 @@ class home extends React.Component {
                 <Col md={3}>
                   <div className="box articlelistmargins">
                     <div className="box1">
-                      <h4 className="firstlineparagraph">
-                        {this.state.pArticle4.category}
-                      </h4>
-                      <Link to={"/Profile/" + this.state.pArticle4.user_id}>
-                        <h5 className="name cursor">
-                          by {this.state.pArticle4.username}
-                        </h5>
-                      </Link>
-                      <h5 className="name2" id="someDivname2">
-                        <i>{this.state.pArticle4.title}</i>
-                      </h5>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <div>
+                          <h4 className="firstlineparagraph">
+                            {this.state.pArticle4.category}
+                          </h4>
+                          <Link to={"/Profile/" + this.state.pArticle4.user_id}>
+                            <h5 className="name cursor">
+                              by {this.state.pArticle4.username}
+                            </h5>
+                          </Link>
+                        </div>
+                        <div>
+                          <img
+                            style={{
+                              width: "40px",
+                              height: "40px",
+                              borderRadius: "50%",
+                              padding: "5px",
+                              border: "1px solid #ff0000 ",
+                              marginBottom: "15px",
+                            }}
+                            src={this.state.image4}
+                          />
+                        </div>
+                      </div>
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "100px",
+                        }}
+                        src={""}
+                      />
                       <p
                         className="name3"
                         id="someDiv"
@@ -354,7 +726,7 @@ class home extends React.Component {
                     </div>
                   </div>
                 </Col>
-              </Row>
+              </Row> */}
 
               <div id="title_message" style={{}}>
                 <br></br>

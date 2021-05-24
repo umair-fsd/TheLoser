@@ -273,9 +273,7 @@ function Header(props) {
                       aria-hidden="true"
                     ></i>
                     <div onClick={() => loginORlogout()}>
-                      <Link
-                      //  to="/Sign"
-                      >
+                      <Link to="/Sign">
                         <b>
                           <p
                             style={{
@@ -682,7 +680,7 @@ function Header(props) {
                     data-target=".navbar-collapse.show"
                     style={{ color: "white" }}
                   >
-                    <b>Blogs</b>
+                    <b>COVID-19</b>
                   </Link>
                 </li>
                 <li class="nav-item">
@@ -856,7 +854,7 @@ function Header(props) {
                   </a>
                   <div class="dropdown-menu">
                     <Link
-                      // to={"/Articallist/" + single_parents}
+                      to={"/Articallist/" + "single_parents"}
                       style={{ color: "red" }}
                       class="dropdown-item"
                       data-toggle="collapse"

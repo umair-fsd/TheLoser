@@ -227,7 +227,7 @@ class Updateprofile extends Component {
               />
 
               <label for="email">
-                <b> Social media profile</b>
+                <b> Social media profile (Optional)</b>
               </label>
               <input
                 value={this.state.Social_media_profile}
@@ -252,7 +252,7 @@ class Updateprofile extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <label for="email">
-                <b> Enter Email</b>
+                <b> Enter Email (Optional)</b>
               </label>
               <input
                 value={this.state.Email}
@@ -264,7 +264,7 @@ class Updateprofile extends Component {
               />
 
               <label for="email">
-                <b> Enter Phone no.</b>
+                <b> Enter Phone no. (Optional)</b>
               </label>
               <input
                 value={this.state.Phone}
@@ -299,7 +299,7 @@ class Updateprofile extends Component {
                 required
               />
               <label for="psw">
-                <b> Enter Contact Email</b>
+                <b> Enter Contact Email (Optional)</b>
               </label>
               <input
                 value={this.state.conatct_email}
@@ -325,7 +325,7 @@ class Updateprofile extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <label for="psw">
-                <b> Enter Profession</b>
+                <b> Enter Profession (Optional)</b>
               </label>
               <input
                 value={this.state.Profession}
@@ -337,7 +337,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Enter Talent </b>
+                <b> Enter Talent (Optional) </b>
               </label>
               <input
                 value={this.state.Talent}
@@ -349,7 +349,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Enter Age </b>
+                <b> Enter Age (Optional) </b>
               </label>
               <input
                 value={this.state.age}
@@ -361,7 +361,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Enter Work experience </b>
+                <b> Enter Work experience (Optional) </b>
               </label>
               <input
                 value={this.state.workexperience}
@@ -373,7 +373,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> My work interest </b>
+                <b> My work interest (Optional) </b>
               </label>
               <input
                 value={this.state.workinterest}
@@ -399,7 +399,7 @@ class Updateprofile extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <label for="psw">
-                <b> Enter HEIGHT </b>
+                <b> Enter HEIGHT (Optional)</b>
               </label>
               <input
                 value={this.state.height}
@@ -411,7 +411,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Enter HAIR COLOR </b>
+                <b> Enter HAIR COLOR (Optional)</b>
               </label>
               <input
                 value={this.state.haircolor}
@@ -423,7 +423,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Enter EYE COLOR </b>
+                <b> Enter EYE COLOR (Optional)</b>
               </label>
               <input
                 value={this.state.Eye_color}
@@ -434,7 +434,7 @@ class Updateprofile extends Component {
                 required
               />
               <label for="psw">
-                <b> Enter LANGUAGE </b>
+                <b> Enter LANGUAGE (Optional) </b>
               </label>
               <input
                 value={this.state.language}
@@ -460,7 +460,7 @@ class Updateprofile extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <label for="psw">
-                <b> Enter YOUR COUNTRY </b>
+                <b> Enter YOUR COUNTRY (Optional) </b>
               </label>
               <input
                 value={this.state.COUNTRY}
@@ -484,7 +484,7 @@ class Updateprofile extends Component {
               />
 
               <label for="psw">
-                <b> Select GENDER </b>
+                <b> Select GENDER (Optional) </b>
               </label>
               <select
                 className="selectinput2"
